@@ -6,7 +6,7 @@ import inventoryRoutes from './routes/inventory.js';
 
 const app = express();
 
-app.use('/inventory', inventoryRoutes); 
+app.use('/', inventoryRoutes); 
 app.use(bodyParser.json({limit:"20mb",extended:true}));
 app.use(bodyParser.urlencoded({limit:"20mb",extended:true}));
 app.use(cors());
